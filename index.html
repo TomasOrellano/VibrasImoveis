@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibras Imóveis | Búzios</title>
+    <meta
+      name="description"
+      content="Landing page moderna para imóveis em Búzios: venda e aluguel com atendimento rápido no WhatsApp."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <nav class="nav container">
+        <div class="brand">Vibras Imóveis</div>
+        <a href="#contato" class="btn btn-outline">Falar agora</a>
+      </nav>
+
+      <div class="hero-content container" data-aos="fade-up">
+        <p class="tag">Búzios · Venda & Aluguel</p>
+        <h1>Encontre o imóvel ideal em Búzios com atendimento imediato</h1>
+        <p>
+          Apartamentos, casas e opções premium em localizações exclusivas. Veja
+          propriedades disponíveis e envie uma solicitação personalizada pelo
+          WhatsApp.
+        </p>
+        <div class="hero-actions">
+          <a href="#imoveis" class="btn btn-primary">Ver imóveis</a>
+          <a href="#contato" class="btn btn-soft">Solicitar atendimento</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="stats container" aria-label="destaques da imobiliária">
+        <article data-aos="zoom-in">
+          <h3>+120</h3>
+          <p>Imóveis no portfólio</p>
+        </article>
+        <article data-aos="zoom-in" data-aos-delay="150">
+          <h3>15+</h3>
+          <p>Anos de experiência local</p>
+        </article>
+        <article data-aos="zoom-in" data-aos-delay="300">
+          <h3>Atendimento</h3>
+          <p>Rápido via WhatsApp</p>
+        </article>
+      </section>
+
+      <section id="imoveis" class="properties section container">
+        <div class="section-head" data-aos="fade-right">
+          <p class="tag">Destaques</p>
+          <h2>Imóveis selecionados para você</h2>
+        </div>
+
+        <div class="swiper properties-swiper" data-aos="fade-up">
+          <div class="swiper-wrapper" id="property-list"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="section location" data-aos="fade-up">
+        <div class="container location-grid">
+          <div>
+            <p class="tag">Búzios</p>
+            <h2>Regiões com maior procura</h2>
+            <p>
+              João Fernandes, Geribá, Ferradura e Manguinhos são alguns dos
+              bairros com alta demanda para compra e locação por temporada.
+            </p>
+          </div>
+          <ul>
+            <li>Casas com vista mar</li>
+            <li>Apartamentos próximos à praia</li>
+            <li>Opções para temporada e anual</li>
+            <li>Imóveis para investimento</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contato" class="section container">
+        <div class="section-head" data-aos="fade-right">
+          <p class="tag">Contato</p>
+          <h2>Receba opções personalizadas no WhatsApp</h2>
+        </div>
+
+        <form id="wa-form" class="contact-card" data-aos="fade-up">
+          <label>
+            Nome
+            <input type="text" name="nome" required placeholder="Seu nome" />
+          </label>
+
+          <label>
+            Interesse
+            <select name="interesse" required>
+              <option value="">Selecione...</option>
+              <option value="Compra">Compra</option>
+              <option value="Aluguel anual">Aluguel anual</option>
+              <option value="Aluguel temporada">Aluguel temporada</option>
+            </select>
+          </label>
+
+          <label>
+            Imóvel desejado
+            <input
+              type="text"
+              name="imovel"
+              placeholder="Ex: Casa 3 quartos em Geribá"
+              required
+            />
+          </label>
+
+          <label>
+            Período ou data de interesse
+            <input
+              type="text"
+              name="datas"
+              placeholder="Ex: Dezembro/2026 ou imediato"
+            />
+          </label>
+
+          <label>
+            Orçamento aproximado
+            <input type="text" name="orcamento" placeholder="Ex: R$ 8.000/mês" />
+          </label>
+
+          <button class="btn btn-primary" type="submit">
+            Enviar solicitação no WhatsApp
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Vibras Imóveis · Búzios</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
