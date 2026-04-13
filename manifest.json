@@ -1,0 +1,16 @@
+{
+  "name": "Vibras Imóveis - Búzios",
+  "short_name": "Vibras Imóveis",
+  "description": "Encontre imóveis em Búzios com atendimento rápido",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f4d4d",
+  "theme_color": "#c89b3c",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=192&h=192&q=80",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

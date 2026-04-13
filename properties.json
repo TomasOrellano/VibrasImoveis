@@ -1,0 +1,107 @@
+﻿[
+  {
+    "title": {
+      "pt": "Casa vista mar em João Fernandes",
+      "es": "Casa con vista al mar en João Fernandes",
+      "en": "Sea view house in João Fernandes"
+    },
+    "type": {
+      "pt": "Venda",
+      "es": "Venta",
+      "en": "Sale"
+    },
+    "location": "João Fernandes",
+    "area": {
+      "pt": "perto da Praia de João Fernandes",
+      "es": "cerca de la Playa de João Fernandes",
+      "en": "near João Fernandes Beach"
+    },
+    "price": "R$ 2.450.000",
+    "beds": 4,
+    "description": {
+      "pt": "Casa com atmosfera exclusiva, integração entre áreas sociais e vista aberta para o mar. Ideal para quem busca morar ou investir em uma das regiões mais desejadas de Búzios.",
+      "es": "Casa con perfil exclusivo, ambientes sociales integrados y vista abierta al mar. Ideal para vivir o invertir en una de las zonas más deseadas de Búzios.",
+      "en": "An exclusive home with open social areas and sea views. A strong fit for buyers looking to live in or invest in one of Búzios most desired areas."
+    },
+    "highlights": {
+      "pt": ["Vista mar permanente", "Ambientes amplos e iluminados", "Localização nobre próxima à praia"],
+      "es": ["Vista permanente al mar", "Ambientes amplios y luminosos", "Ubicación premium cerca de la playa"],
+      "en": ["Permanent sea view", "Bright and spacious interiors", "Prime location near the beach"]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+    ]
+  },
+  {
+    "title": {
+      "pt": "Apartamento elegante em Geribá",
+      "es": "Apartamento elegante en Geribá",
+      "en": "Elegant apartment in Geribá"
+    },
+    "type": {
+      "pt": "Aluguel temporada",
+      "es": "Alquiler temporada",
+      "en": "Seasonal rental"
+    },
+    "location": "Geribá",
+    "area": {
+      "pt": "perto da Praia de Geribá",
+      "es": "cerca de la Playa de Geribá",
+      "en": "near Geribá Beach"
+    },
+    "price": "R$ 1.200 / diária",
+    "beds": 2,
+    "description": {
+      "pt": "Apartamento elegante e funcional para temporada, com layout prático e clima de descanso. Excelente opção para quem quer aproveitar Búzios com conforto e mobilidade.",
+      "es": "Apartamento elegante y funcional para temporada, con distribución práctica y ambiente relajado. Excelente opción para disfrutar Búzios con confort y movilidad.",
+      "en": "A stylish and practical seasonal apartment with a relaxed atmosphere. Great for enjoying Búzios with comfort and easy access to key spots."
+    },
+    "highlights": {
+      "pt": ["Ideal para temporada", "Poucos minutos da praia", "Boa relação entre conforto e localização"],
+      "es": ["Ideal para temporada", "A pocos minutos de la playa", "Gran equilibrio entre confort y ubicación"],
+      "en": ["Ideal for seasonal stays", "Just minutes from the beach", "Strong balance of comfort and location"]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+    ]
+  },
+  {
+    "title": {
+      "pt": "Casa ampla em condomínio na Ferradura",
+      "es": "Casa amplia en condominio en Ferradura",
+      "en": "Spacious house in condominium in Ferradura"
+    },
+    "type": {
+      "pt": "Aluguel anual",
+      "es": "Alquiler anual",
+      "en": "Annual rental"
+    },
+    "location": "Ferradura",
+    "area": {
+      "pt": "perto da Praia da Ferradura",
+      "es": "cerca de la Playa de Ferradura",
+      "en": "near Ferradura Beach"
+    },
+    "price": "R$ 12.000 / mês",
+    "beds": 3,
+    "description": {
+      "pt": "Casa em condomínio com perfil familiar, mais privacidade e rotina tranquila para moradia anual. Combina segurança, conforto e proximidade com uma das praias mais valorizadas da região.",
+      "es": "Casa en condominio con perfil familiar, más privacidad y una rutina tranquila para vivir todo el año. Combina seguridad, confort y cercanía a una de las playas más valoradas de la zona.",
+      "en": "A gated-condo home with a family-friendly profile, extra privacy and a calm pace for annual living. It combines security, comfort and closeness to one of the area's most valued beaches."
+    },
+    "highlights": {
+      "pt": ["Condomínio com mais privacidade", "Boa opção para moradia anual", "Região valorizada e tranquila"],
+      "es": ["Condominio con mayor privacidad", "Buena opción para vivienda anual", "Zona tranquila y valorizada"],
+      "en": ["Gated setting with more privacy", "Great for annual living", "Quiet and highly valued area"]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+    ]
+  }
+]

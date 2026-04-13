@@ -3,11 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vibras Imóveis | Búzios</title>
+    <title>Vibras Imóveis | Imóveis em Búzios - Venda e Aluguel</title>
     <meta
       name="description"
-      content="Landing page moderna para imóveis em Búzios: venda e aluguel com atendimento rápido no WhatsApp."
+      content="Encontre imóveis em Búzios: casas, apartamentos para venda e aluguel. Atendimento rápido via WhatsApp. João Fernandes, Geribá, Ferradura."
     />
+    <meta name="keywords" content="imóveis Búzios, casas Búzios, apartamentos Búzios, venda imóveis, aluguel temporada, imóveis praia, João Fernandes, Geribá, Ferradura" />
+    <meta name="author" content="Vibras Imóveis" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Portuguese" />
+    <link rel="canonical" href="https://vibrasimoveis.com" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vibrasimoveis.com" />
+    <meta property="og:title" content="Vibras Imóveis | Imóveis em Búzios" />
+    <meta property="og:description" content="Encontre o imóvel ideal em Búzios com atendimento imediato via WhatsApp." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://vibrasimoveis.com" />
+    <meta property="twitter:title" content="Vibras Imóveis | Imóveis em Búzios" />
+    <meta property="twitter:description" content="Encontre o imóvel ideal em Búzios com atendimento imediato via WhatsApp." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.json" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,12 +45,47 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Vibras Imóveis",
+      "description": "Imobiliária especializada em imóveis em Búzios",
+      "url": "https://vibrasimoveis.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Búzios",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-21-99999-9999",
+        "contactType": "customer service",
+        "availableLanguage": ["Portuguese", "Spanish", "English"]
+      },
+      "sameAs": [
+        "https://wa.me/5521999999999"
+      ]
+    }
+    </script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
     <header class="hero" id="inicio">
       <nav class="nav container">
         <div class="brand">Vibras Imóveis</div>
-        <a href="#contato" class="btn btn-outline">Falar agora</a>
+        <div class="nav-right">
+          <label class="language-label" for="language-select">Idioma</label>
+          <select id="language-select" class="language-select">
+            <option value="pt">🇧🇷 PT</option>
+            <option value="es">🇪🇸 ES</option>
+            <option value="en">🇬🇧 EN</option>
+          </select>
+          <a href="#contato" class="btn btn-outline">Falar agora</a>
+        </div>
       </nav>
 
       <div class="hero-content container" data-aos="fade-up">
@@ -45,7 +103,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="stats container" aria-label="destaques da imobiliária">
         <article data-aos="zoom-in">
           <h3>+120</h3>
@@ -99,14 +157,14 @@
         </div>
 
         <form id="wa-form" class="contact-card" data-aos="fade-up">
-          <label>
+          <label for="nome">
             Nome
-            <input type="text" name="nome" required placeholder="Seu nome" />
+            <input id="nome" type="text" name="nome" required placeholder="Seu nome" />
           </label>
 
-          <label>
+          <label for="interesse">
             Interesse
-            <select name="interesse" required>
+            <select id="interesse" name="interesse" required>
               <option value="">Selecione...</option>
               <option value="Compra">Compra</option>
               <option value="Aluguel anual">Aluguel anual</option>
@@ -114,9 +172,10 @@
             </select>
           </label>
 
-          <label>
+          <label for="imovel">
             Imóvel desejado
             <input
+              id="imovel"
               type="text"
               name="imovel"
               placeholder="Ex: Casa 3 quartos em Geribá"
@@ -124,18 +183,19 @@
             />
           </label>
 
-          <label>
+          <label for="datas">
             Período ou data de interesse
             <input
+              id="datas"
               type="text"
               name="datas"
               placeholder="Ex: Dezembro/2026 ou imediato"
             />
           </label>
 
-          <label>
+          <label for="orcamento">
             Orçamento aproximado
-            <input type="text" name="orcamento" placeholder="Ex: R$ 8.000/mês" />
+            <input id="orcamento" type="text" name="orcamento" placeholder="Ex: R$ 8.000/mês" />
           </label>
 
           <button class="btn btn-primary" type="submit">
@@ -145,9 +205,80 @@
       </section>
     </main>
 
+    <!-- Modal for property details -->
+    <div id="property-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+          <div class="swiper property-carousel">
+            <div class="swiper-wrapper" id="modal-images"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="modal-info">
+            <h2 id="modal-title"></h2>
+            <p id="modal-meta"></p>
+            <p id="modal-price"></p>
+            <p id="modal-description" class="modal-description"></p>
+            <div id="modal-highlights" class="modal-highlights"></div>
+            <div class="modal-actions">
+              <a id="modal-whatsapp" class="btn btn-primary" href="#" target="_blank" rel="noopener">Consultar no WhatsApp</a>
+              <a id="modal-email" class="btn btn-outline" href="mailto:contato@vibrasimoveis.com?subject=Interesse em imóvel&body=Olá, tenho interesse no imóvel...">Enviar e-mail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chatbot-widget" id="chatbot-widget">
+      <a class="chatbot-whatsapp" href="https://wa.me/5521999999999" target="_blank" rel="noopener" title="Contactar por WhatsApp" aria-label="Contactar por WhatsApp">
+        <span class="chatbot-whatsapp-badge" aria-hidden="true">
+          <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+          </svg>
+        </span>
+        <span class="chatbot-whatsapp-copy">
+          <strong>WhatsApp</strong>
+          <small>Atenci&oacute;n inmediata</small>
+        </span>
+      </a>
+      <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Abrir chat de ayuda">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M4 4h16v12H7l-5 5V4zm2 2v8.17L7.17 12H18V6H6z" />
+        </svg>
+        Chat
+      </button>
+      <div class="chatbot-panel" id="chatbot-panel" aria-hidden="true">
+        <div class="chatbot-header">
+          <span>Chat Vibras</span>
+          <button class="chatbot-close" aria-label="Cerrar chat">×</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+        <form id="chatbot-form" class="chatbot-form">
+          <input id="chatbot-input" type="text" placeholder="Escribe tu pregunta..." autocomplete="off" />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="container">
-        <p>© <span id="year"></span> Vibras Imóveis · Búzios</p>
+        <div class="footer-content">
+          <p>© <span id="year"></span> Vibras Imóveis · Búzios</p>
+          <div class="footer-icons">
+            <a href="https://wa.me/5521999999999" target="_blank" rel="noopener" title="WhatsApp">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+              </svg>
+            </a>
+            <a href="mailto:contato@vibrasimoveis.com" title="E-mail">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
 
